@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+}
+body, html {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+/* Style the header */
+header {
+  background-color: #666;
+  //padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: black;
+  display: -webkit-flex;
+  display: flex;
+
+  padding: 15px 40px;
+  background: yellow;
+}
+h2{
+margin: 0px auto;
+}
+main{
+    height: 100%;
+     
+    
+/* Ubicación de la imagen */
+
+background-image: url(img/fondo_secciones.png);
+
+/* Para dejar la imagen de fondo centrada, vertical y
+
+horizontalmente */
+
+background-position: center center;
+
+/* Para que la imagen de fondo no se repita */
+
+background-repeat: no-repeat;
+
+/* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+
+background-attachment: fixed;
+
+/* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+
+background-size: cover;
+
+/* Se muestra un color de fondo mientras se está cargando la imagen
+
+de fondo o si hay problemas para cargarla */
+
+background-color: #66999;
+   }
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+/* Style the navigation menu */
+.sec1 {
+    /*
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  */
+  flex: 1;
+  //background: rgb(223, 14, 14);
+  padding: 5px;
+}
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+.divtextInput{
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+}
+.textInput{
+    height: 250px;
+    width: 80%;
+    background-color: #F3F5FC;
+    border: none;
+    box-shadow:10px 10px 10px gray;
+    border-radius: 15px 50px;
+    padding: 10px 25px 25px 10px;
+    font-size: 18px;
+}
+.advertencia{
+    width: 80%;
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 20px;
+//    background-color: #777;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.cajaBotones{
+    width: 80%;
+    text-align: center;
+    margin: 0px auto;
+    //background-color: #777;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.btnEncriptar,.btnDesencriptar,.btnCopiar,.btnReset{
+    padding: 15px 0px;
+    border-radius: 14px;
+    margin: 10px;
+    font-size: 18px;
+
+}
+.btnEncriptar{
+    color: white;
+    background: #0A3871;    
+    width: 40%;
+}
+
+.btnDesencriptar{
+    color: black;
+    width: 40%;
+}
+
+.btnReset{
+    color:white;
+    background-color:darkred;
+    width: 20%;
+}
+
+/* Style the content */
+.sec2 {
+  /* -webkit-flex: 1; */
+  /* -ms-flex: 1; */
+  flex: 1;
+  background-color: #f1f1f1;
+  padding: 15px 15px;
+  margin-top: 30px;
+  margin-right: 50px;
+  margin-left: 50px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.Mensaje1{
+    font-size: 35px;
+}
+.MensajeCopiado{
+  font-size: 35px;
+  visibility: hidden;
+}
+.Mensaje2{
+    padding-top: 15px;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+.cajaRespuestas{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.textRespuesta{
+    height: 350px;
+    width: 80%;
+    background-color:  #f1f1f1;
+    border: none;
+    font-size: 18px;    
+    background-image: url(img/munheco.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cajaCopiar{
+    width: 50%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    //background-color: #0A3871;
+}
+.btnCopiar{
+    color: green;
+    width: 90%;
+    font-weight: bold;
+    font-size: 18px;
+    visibility:hidden;
+}
+/* Style the footer */
+.tablefooter {
+  margin: 0 auto;
+  width: 80%;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.tablefooter td {
+  //border: 1px solid #000000;
+  text-align: center;
+}
+
+.linkfooter {
+  text-decoration: none;
+}
+
+footer {
+  position: fixed;
+  background: orange;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  width: 100%;
+  bottom: 0px;
+}
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+
+@media (max-width: 940px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    //background-color: aqua;
+  }
+  .sec2 {
+    /* -webkit-flex: 1; */
+    /* -ms-flex: 1; */
+    flex: 1;
+    margin-top: 3px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 25px;
+    text-align: center;
+  }  
+}

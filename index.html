@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Deco - 1er Challenge ONE-Alura</title>
+</head>
+
+<body>
+  <header>
+    <img src="img/logo.png">
+    <h2>1º Challenge ONE | Alura Latam</h2>
+  </header>
+  <main>
+    <section>
+      <article class="sec1">
+        <div class="divtextInput"><textarea name="textInput" class="textInput" placeholder="Ingrese el texto aquí" ></textarea></div>
+        <div class="advertencia">
+          <p style="color: azure;"><span><img src="img/bi_exclamation-circle-fill.png"></span> Solo letras minúsculas y sin acentos</p>        
+        </div>        
+        <div class="cajaBotones">
+          <button class="btnEncriptar" onclick="btnencriptar()">Encriptar</button>
+          <button class="btnDesencriptar" onclick="btndesencriptar()">Desencriptar</button>
+          <button class="btnReset" onclick="btnreset()">Reset</button>
+        </div>
+      </article>
+
+      <article class="sec2">
+        <div class="cajaRespuestas">
+          <textarea class="textRespuesta" readonly></textarea>
+        </div>
+        <div class="Mensaje1">
+          <p>Ningún mensaje fue<br>encontrado</p>
+        </div>
+        <div class="MensajeCopiado">
+          <p>Texto copiado</p>
+        </div>        
+          <div class="Mensaje2">
+            <p>Ingresa el texto que desees encriptar o<br>desencriptar</p>
+          </div>
+          <div>
+            <button class="btnCopiar" onclick="btncopiar()">Copiar</button>
+          </div>
+      </article>
+      
+    </section>
+  </main>
+  <footer>
+    <table class="tablefooter">
+      <tbody>
+          <tr>
+              <td>
+                  <p>Studying in <a class="linkfooter"
+                          href="https://www.oracle.com/ar/education/oracle-next-education/" target="_blank">Oracle
+                          Next Education</a></p>
+              </td>
+              <td>
+                  <p>Powered by <a class="linkfooter" href="https://github.com/rodolfoexenior"
+                          target="_blank">Rodolfo eXenior</a></p>
+              </td>
+              <td>
+                  <p>First Challenge ONE | <a class="linkfooter" href="https://www.aluracursos.com/"
+                          target="_blank">Alura Latam</a></p>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+
+  </footer>
+
+</body>
+<script src="script.js"></script>
+
+<!-- Aporte para nuevo Alert  https://github.com/t4t5/sweetalert | buscado en google-->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+</html>
