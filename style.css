@@ -55,7 +55,7 @@ background-color: #66999;
    }
 /* Container for flexboxes */
 section {
-  display: -webkit-flex;
+  //display: -webkit-flex;
   display: flex;
 }
 /* Style the navigation menu */
@@ -231,4 +231,10 @@ footer {
     border-radius: 25px;
     text-align: center;
   }  
+  .textRespuesta{
+    height: 60px;
+  }
+  footer{
+    position: fixed;
+  }
 }
