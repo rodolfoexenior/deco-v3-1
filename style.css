@@ -205,7 +205,7 @@ nav ul {
 }
 
 footer {
-  position: fixed;
+  position: relative;
   background: orange;
   padding: 10px;
   text-align: center;
