@@ -25,7 +25,9 @@ main{
     height: 100%;
      
     
-/* Ubicación de la imagen */
+/*  codigo buscado en google, para mejora el uso de mi backgroun en responsive
+
+Ubicación de la imagen */
 
 background-image: url(img/fondo_secciones.png);
 
@@ -107,13 +109,27 @@ nav ul {
     flex-direction: row;
     align-items: flex-start;
 }
+
 .btnEncriptar,.btnDesencriptar,.btnCopiar,.btnReset{
     padding: 15px 0px;
     border-radius: 14px;
     margin: 10px;
     font-size: 18px;
-
+    cursor: pointer;
 }
+
+.btnEncriptar:hover,.btnDesencriptar:hover,.btnReset:hover{
+  color: white;
+  background: #fbff0071;    
+  transition: 1s;
+}
+
+.btnCopiar:hover{
+  color: black;
+  background: #fbff0071;    
+  transition: 1s;  
+}
+
 .btnEncriptar{
     color: white;
     background: #0A3871;    
@@ -233,6 +249,7 @@ footer {
   }  
   .textRespuesta{
     height: 60px;
+    background-image: url();
   }
   footer{
     position: fixed;
