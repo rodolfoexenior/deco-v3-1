@@ -4,6 +4,10 @@ const mensaje1 = document.querySelector(".Mensaje1");
 const mensaje2 = document.querySelector(".Mensaje2");
 const textCopiado = document.querySelector(".MensajeCopiado");
 const botonCopiar = document.querySelector(".btnCopiar");
+/* solucion que busque en google para ocultar el muñeco cuando usaba fuc en botones */
+const mediaqueryList = window.matchMedia("(max-width: 800px)");
+
+
 
 function btnencriptar() {
   if (inputTexto.value == "") {
@@ -47,11 +51,19 @@ function btnreset() {
   inputTexto.value = "";
   //    mensaje.style.backgroundImage="url(img/munheco.png)";
   inputTexto.focus();
-  mensaje.style.backgroundImage = "";
+  if(mediaqueryList.matches) {
+    alert('La media query se cumple');
+    mensaje.style.backgroundImage = "none";
+  }else{
+    mensaje.style.backgroundImage = "";
+  }  
+
   mensaje1.style.visibility = "visible";
   mensaje2.style.visibility = "visible";
   botonCopiar.style.visibility = "hidden";
   mensaje.value = "";
+  
+
 }
 
 function desencriptar(textoEncriptar) {
